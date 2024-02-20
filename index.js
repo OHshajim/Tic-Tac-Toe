@@ -15,17 +15,23 @@ const winPattarns = [
 for (const box of boxes) {
     box.addEventListener("click", function () {
         if (turnO) {
-             box.innerText = "O";
-            turnO = false ;
-            }
-        else{
-            box.innerText = "X";
-            turnO = true ;
+            box.innerText = "O";
+            turnO = false;
         }
-        box.disabled = true ;
+        else {
+            box.innerText = "X";
+            turnO = true;
+        }
+        box.disabled = true;
     })
-    Rbox.addEventListener("click",function(){
+   
+
+
+
+    Rbox.addEventListener("click", function () {
         box.innerText = "";
-        box.disabled = false ;
+        box.disabled = false;
     })
-};
+}
+
+
