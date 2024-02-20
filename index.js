@@ -28,4 +28,4 @@ for (const box of boxes) {
         box.innerText = "";
         box.disabled = false ;
     })
-}
+};
