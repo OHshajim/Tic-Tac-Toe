@@ -1,18 +1,17 @@
 *{ 
     margin: 0px;
     padding: 0px;
-    background-color:#16697A;
+    background-color:#363535;
 }
 header{
     width: full;
     margin-top: 50px;
 }
 h1{
-    /* width: full; */
     margin: auto;
     text-align: center;
-    font-size:64px;
-    color: white;
+    font-size:76px;
+    color: rgb(188, 228, 249);
 }
 body{
     text-align: center;
@@ -48,7 +47,7 @@ body{
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgb(0,0,0,0.1);
 
-    font-size: 7em;
+    font-size: 8em;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
 
