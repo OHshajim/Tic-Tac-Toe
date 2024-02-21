@@ -17,6 +17,7 @@ h1{
 body{
     text-align: center;
 }
+
 #container{
     height:70vh;
     display:flex;
@@ -32,6 +33,13 @@ body{
     flex-wrap: wrap;
     gap: 1.5vmin;
 }
+#R-btn{
+    width: 15vmin;
+    height: 7vmin;
+    color: white;
+    font-size: 1.5rem;
+}
+
 .box{
     width: 18vmin;
     height: 18vmin;
@@ -46,7 +54,6 @@ body{
 
 }
 
-
 .glow-on-hover {
     border: none;
     outline: none;
@@ -55,7 +62,6 @@ body{
     z-index: 0;
     border-radius: 10px;
 }
-
 .glow-on-hover:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -72,11 +78,9 @@ body{
     transition: opacity .5s ease-in-out;
     border-radius: 10px;
 }
-
 .glow-on-hover:hover:before {
     opacity: 1;
 }
-
 .glow-on-hover:after {
     z-index: -1;
     content: '';
@@ -88,15 +92,8 @@ body{
     top: 0;
     border-radius: 10px;
 }
-
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
-}
-#R-btn{
-    width: 15vmin;
-    height: 7vmin;
-    color: white;
-    font-size: 1.5rem;
 }
