@@ -51,9 +51,11 @@ function checkWin() {
         if (first == "" && second == "" && third == "")return ;
             if (first === second && second === third) {
                 console.log("win");
+                if(first==="X"){document.body.style.background="linear-gradient(0deg, rgba(255,128,0,1) 0%, rgba(203,47,47,1) 26%, rgba(133,5,27,1) 63%)"}
+                else{  document.body.style.background = 'linear-gradient(90deg, rgba(106,175,0,1) 0%, rgba(11,78,0,1) 100%)';}
                 text.innerText = `Winner is ${first}`
                 disabledBoxes();
-                document.body.style.background = 'linear-gradient(90deg, rgba(106,175,0,1) 0%, rgba(11,78,0,1) 100%)';
+              
 
             }
     }
