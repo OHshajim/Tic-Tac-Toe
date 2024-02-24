@@ -1,7 +1,7 @@
 *{ 
     margin: 0px;
     padding: 0px;
-    background-color:#363535;
+  
 }
 header{
     width: full;
@@ -15,6 +15,7 @@ h1{
 }
 body{
     text-align: center;
+    background-color:#363535;
 }
 
 #container{

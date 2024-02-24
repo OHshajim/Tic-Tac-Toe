@@ -17,16 +17,17 @@ for (const box of boxes) {
     box.addEventListener("click", function () {
         if (turnO) {
             box.innerText = "O";
+            box.style.color = "#c3c3c3"
             turnO = false;
         }
         else {
             box.innerText = "X";
+            box.style.color = "#c12424"
             turnO = true;
         }
         box.disabled = true;
     // win screen
         checkWin()
-
     })
 
 
@@ -35,6 +36,7 @@ for (const box of boxes) {
         box.innerText = "";
         box.disabled = false;
         text.innerText = "Tic Tac Toe"
+        document.body.style.background = "#363535"
     })
 }
 
@@ -51,6 +53,7 @@ function checkWin() {
                 console.log("win");
                 text.innerText = `Winner is ${first}`
                 disabledBoxes();
+                document.body.style.background = 'linear-gradient(90deg, rgba(106,175,0,1) 0%, rgba(11,78,0,1) 100%)';
 
             }
     }
